@@ -1,3 +1,26 @@
+# Evolution of Todo - Phase 1: CLI
+
+Phase 1 of the Todo application evolution has been completed. This phase delivered a fully functional in-memory CLI application with all CRUD operations.
+
+## Completed Features
+
+- Add tasks with title and description
+- List all tasks with their status
+- Update title/description by ID
+- Delete tasks by ID
+- Toggle completion status by ID
+- CLI menu interface
+
+## Next Phases
+
+Future phases may include:
+- Web interface
+- Persistent storage
+- Multi-user support
+- Advanced features
+
+---
+
 # Claude Code Rules
 
 This file is generated during init for the selected agent.

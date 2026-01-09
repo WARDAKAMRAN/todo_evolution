@@ -49,8 +49,11 @@ description: "Task list template for feature implementation"
 **Purpose**: Project initialization and basic structure
 
 - [ ] T001 Create project structure per implementation plan
-- [ ] T002 Initialize [language] project with [framework] dependencies
-- [ ] T003 [P] Configure linting and formatting tools
+- [ ] T002 Initialize Python 3.13+ project with UV package manager
+- [ ] T003 [P] Configure linting and formatting tools with Python focus
+- [ ] T004 [P] Set up CLI framework structure for command-line interface
+- [ ] T005 [P] Configure in-memory storage system (no persistent files for Phase 1)
+- [ ] T006 [P] Set up type hinting enforcement and validation tools
 
 ---
 
@@ -151,11 +154,16 @@ Examples of foundational tasks (adjust based on your project):
 **Purpose**: Improvements that affect multiple user stories
 
 - [ ] TXXX [P] Documentation updates in docs/
-- [ ] TXXX Code cleanup and refactoring
+- [ ] TXXX Code cleanup and refactoring to follow Clean Architecture principles
 - [ ] TXXX Performance optimization across all stories
 - [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
 - [ ] TXXX Security hardening
 - [ ] TXXX Run quickstart.md validation
+- [ ] TXXX Verify all Python code includes proper type hints
+- [ ] TXXX Validate CLI interface meets command-line only requirements
+- [ ] TXXX Confirm no persistent file storage is used (in-memory only for Phase 1)
+- [ ] TXXX Verify all execution uses uv run commands
+- [ ] TXXX Confirm implementation stays within specification bounds (no extra features)
 
 ---
 

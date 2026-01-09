@@ -31,7 +31,14 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Spec-Driven Development: Verify that a complete specification exists in `/specs/[feature-name]/spec.md` before any implementation begins
+- Technology Stack: Confirm Python 3.13+ with UV package manager will be used
+- CLI Platform: Ensure implementation targets Command Line Interface only
+- In-Memory Storage: Verify no persistent file storage (JSON/CSV) or databases are planned for Phase 1
+- Clean Architecture: Confirm architectural layers will be properly separated
+- Type Hints: Verify all Python code will include proper type annotations
+- Scope Adherence: Confirm implementation stays within specification bounds
+- Execution: Verify all commands will use uv run
 
 ## Project Structure
 

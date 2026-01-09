@@ -113,3 +113,13 @@
 - **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
 - **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
 - **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+
+### Constitution Compliance
+
+- **CC-001**: Spec-Driven Development: This specification must serve as the authoritative source for all implementation
+- **CC-002**: Technology Stack: Implementation will use Python 3.13+ with UV package manager
+- **CC-003**: CLI Platform: All user interactions will be through Command Line Interface
+- **CC-004**: In-Memory Storage: No persistent file storage (JSON/CSV) or databases for Phase 1
+- **CC-005**: Clean Architecture: Implementation will follow clean architecture principles
+- **CC-006**: Type Hints: All Python code will include proper type annotations
+- **CC-007**: Scope Control: Implementation will not exceed the bounds of this specification
