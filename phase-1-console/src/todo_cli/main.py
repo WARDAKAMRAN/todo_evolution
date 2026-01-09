@@ -6,7 +6,7 @@ from .cli.menu import TodoMenu
 
 def main() -> None:
     """Application entry point."""
-    # Initialize the service and menu
+    # Initialize the service and menup
     service = TodoService()
     menu = TodoMenu(service)
 
