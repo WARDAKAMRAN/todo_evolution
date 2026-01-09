@@ -35,12 +35,13 @@ Phase 2 implements an agentic web API using FastAPI and SQLModel with Neon Postg
 10. **FastAPI Framework**: Use FastAPI for automatic API documentation (Swagger/OpenAPI)
 11. **Type Safety**: Implement strict typing throughout the API layer
 12. **Database Connection**: Establish secure connection to Neon PostgreSQL database
+13. **Error Handling**: Implement consistent error responses following format: {error: string, code: string, details?: object} with appropriate HTTP status codes
 
 ## Non-Functional Requirements
 
 ### Performance
 - API endpoints respond within 500ms for typical operations
-- Support at least 100 concurrent API requests
+- Support 100 concurrent HTTP connections with connection pooling
 - Handle payloads up to 1MB in size
 
 ### Scalability
@@ -76,11 +77,11 @@ Phase 2 implements an agentic web API using FastAPI and SQLModel with Neon Postg
 - updated_at: Timestamp of last update
 
 ### API Endpoints
-- GET /todos: Retrieve all todo items
+- GET /todos: Retrieve all todo items with pagination (page-based with 'page' and 'size' query parameters, default size 20)
 - GET /todos/{id}: Retrieve specific todo item
 - POST /todos: Create new todo item
 - PUT /todos/{id}: Update existing todo item
-- DELETE /tos/{id}: Delete todo item
+- DELETE /todos/{id}: Delete todo item
 - PATCH /todos/{id}/toggle: Toggle completion status
 
 ## Constraints
